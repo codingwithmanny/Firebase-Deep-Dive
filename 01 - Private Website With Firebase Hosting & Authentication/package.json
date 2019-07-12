@@ -1,0 +1,9 @@
+{
+  "name": "private-website-with-firebase-hosting-and-authentication",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^7.1.0"
+  }
+}
