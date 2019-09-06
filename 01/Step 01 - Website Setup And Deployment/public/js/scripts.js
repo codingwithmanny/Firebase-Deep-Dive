@@ -12,7 +12,7 @@ window.onload = () => {
 
         // Reset error message
         error.innerHTML = '';
-        error.setAttribute('display', 'none');
+        error.setAttribute('style', 'display: none;');
 
         // Get values
         const [ email, password ] = event.currentTarget;
@@ -23,7 +23,7 @@ window.onload = () => {
 
         if (!regExpEmail.exec(email.value) || !regExpPassword.exec(password.value)) {
             error.innerHTML = 'Missing email and/or password.';
-            error.setAttribute('display', 'block');
+            error.setAttribute('style', 'display: block;');
             return; // do nothing
         }
 

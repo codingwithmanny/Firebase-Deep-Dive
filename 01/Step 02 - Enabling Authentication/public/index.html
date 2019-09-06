@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCyemce1xD9h8856sq_TrWBMw8SnyWgbl0",
+      authDomain: "fir-deep-dive-3d34a.firebaseapp.com",
+      databaseURL: "https://fir-deep-dive-3d34a.firebaseio.com",
+      projectId: "fir-deep-dive-3d34a",
+      storageBucket: "",
+      messagingSenderId: "261743613969",
+      appId: "1:261743613969:web:260b011e09beda3b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="/js/scripts.js"></script>
+  <title>Your Firebase Project</title>
+</head>
+<body>
+  <!-- LOGIN -->
+  <section id="login">
+    <h1>Your Firebase Project</h1>
+    <form>
+      <label for="email">Email
+        <input type="email" name="email" value="" placeholder="Email Address" />
+      </label>
+      <label for="password">Password
+          <input type="password" name="password" value="" placeholder="Password" />
+      </label>
+      <p>An error occurred!</p>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+  <!-- end LOGIN -->
+
+  <!-- LOGOUT -->
+  <section id="logout">
+    <h2>Already logged in as <code></code></h2>
+    <button>Logout</button>
+  </section>
+  <!-- end LOGOUT -->
+</body>
+</html>
